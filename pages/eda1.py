@@ -53,7 +53,7 @@ with tab_2:
 
         report = ProfileReport(df, title = 'Player Market Value Prediction FIFA21')
 
-        st.write(st_profile_report(report))
+        st_profile_report(report)
 
 with tab_3:
     st.markdown('<style> .center-div {color: red; text-align: center;} </style> <div class="center-div">Multivariate Analysis</div>', unsafe_allow_html=True)
@@ -192,4 +192,5 @@ with nav3:
     if st.button("➡️ Next"):
         go_to("pages\modeling.py")
         st.switch_page("pages\modeling.py")
+
 
