@@ -10,11 +10,13 @@ import joblib
 import base64
 import sys
 from custom_transformers import LogTransformer, Handle_outliers_lb_ub, FrequencyEncoder
-
 import types
-sys.modules['__main__'].LogTransformer = LogTransformer
-sys.modules['__main__'].Handle_outliers_lb_ub = Handle_outliers_lb_ub
-sys.modules['__main__'].FrequencyEncoder = FrequencyEncoder
+import __main__
+
+__main__.LogTransformer = LogTransformer
+__main__.Handle_outliers_lb_ub = Handle_outliers_lb_ub
+__main__.FrequencyEncoder = FrequencyEncoder
+
 
 # ========== PAGE TITLE ==========
 st.markdown(""""<h4 style="color:white;text-align:center;">🧠 Prediction Model</h4>""", unsafe_allow_html=True)
@@ -96,10 +98,11 @@ def go_to(page):
 nav1, nav2, nav3 = st.columns([1, 2, 1])
 with nav1:
     if st.button("⬅️ Back"):
-        go_to("pages\eda1.py")
-        st.switch_page("pages\eda1.py")
+        go_to("pages/eda1.py")
+        st.switch_page("pages/eda1.py")
 
 with nav3:
     if st.button("➡️ Next"):
         go_to("pages/presntation.py")
         st.switch_page("pages/presntation.py")
+
