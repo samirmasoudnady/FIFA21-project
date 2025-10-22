@@ -1,6 +1,6 @@
 streamlit==1.37.1
 pandas==2.2.2
-numpy==1.26.4
+numpy==1.25.2
 matplotlib==3.8.4
 seaborn==0.12.2
 plotly==5.22.0
@@ -8,5 +8,7 @@ ydata-profiling==4.6.4
 scikit-learn==1.5.1
 catboost==1.2.5
 joblib==1.4.2
+
+
 
 
