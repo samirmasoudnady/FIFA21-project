@@ -1,6 +1,7 @@
 
 import streamlit as st
-from ydata_profiling import  ProfileReport
+from ydata_profiling import ProfileReport
+from streamlit_pandas_profiling import st_profile_report
 import matplotlib.pyplot as plt
 import plotly.express as px 
 from time import sleep
@@ -191,3 +192,4 @@ with nav3:
     if st.button("➡️ Next"):
         go_to("pages\modeling.py")
         st.switch_page("pages\modeling.py")
+
