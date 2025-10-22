@@ -28,7 +28,7 @@ st.markdown("""<style>/* Background & text color */
 image_path = "images/7.jpg"
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image(image_path)
+    st.image(image_path, , width=700)
 
 st.markdown("""<p style='text-align:center; color:red; font-size:18px;'>Discover insights, analyze data, 
 and predict FIFA 21 Player Market Values Using CatBoost Models.</p>""", unsafe_allow_html=True)
@@ -67,4 +67,5 @@ if "fade" in st.session_state and st.session_state["fade"]:
     st.markdown( """<style>.stApp {animation: fadeEffect 0.7s;}@keyframes fadeEffect {from {opacity: 0;}
             to {opacity: 1;}}</style>""", unsafe_allow_html=True)
     st.session_state["fade"] = False
+
 
