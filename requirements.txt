@@ -8,6 +8,8 @@ ydata-profiling==4.6.4
 scikit-learn==1.5.1
 catboost==1.2.5
 joblib==1.4.2
+streamlit-pandas-profiling==0.1.3
+
 
 
 
